@@ -128,7 +128,7 @@ const tutto = [
 		color: 'blue'
 	}
 ];
-const contenitore = document.getElementsByClassName(".container");
+const contenitore = document.querySelector(".container");
 
 for(let i = 0; i < tutto.length; i++){
     scheda =`
@@ -137,10 +137,10 @@ for(let i = 0; i < tutto.length; i++){
             <i class="fa-solid ${tutto[i].prefix}${tutto[i].name}"></i>
         </div>
         <div class="card-text">
-            <h3>${tutto[i].name}test</h3>
+            <h3>${tutto[i].name}</h3>
         </div>
     </div>
     `;
     contenitore.innerHTML += scheda; 
-     console.log(scheda)
+    console.log(scheda)
 }
