@@ -3,3 +3,12 @@
     max-width: 1000px;
     border: 2px solid black;
 }
+.card-colororange{
+    color: orange;
+}
+.card-colorgreen{
+    color: green;
+}
+.card-colorblue{
+    color: blue;
+}

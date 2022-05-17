@@ -133,14 +133,14 @@ const contenitore = document.getElementsByClassName(".container");
 for(let i = 0; i < tutto.length; i++){
     scheda =`
     <div class="card">
-            <div class="card-icon">
+        <div class="card-icon card-color${tutto[i].color}">
             <i class="fa-solid ${tutto[i].prefix}${tutto[i].name}"></i>
-            </div>
-            <div class="card-text">
-            <h3>${tutto[i].name}</h3>
-            </div>
         </div>
-        `;
-contenitore.innerHTML += scheda; 
-console.log(scheda)
+        <div class="card-text">
+            <h3>${tutto[i].name}test</h3>
+        </div>
+    </div>
+    `;
+    contenitore.innerHTML += scheda; 
+     console.log(scheda)
 }
