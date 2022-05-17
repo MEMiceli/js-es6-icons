@@ -14,7 +14,7 @@
 // Come possiamo usare i dati presenti nella nostra struttura dati per creare l'elemento html nel modo corretto e visualizzare l'icona in pagina?
 // Inizialmente può essere sufficiente stampare dei semplici div, senza alcuno stile, con all'interno l'icona e uno span con il nome. Solamente quando la parte logica è completa, ci dedichiamo al css.
 
-const all = [
+const tutto = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -129,3 +129,18 @@ const all = [
 	}
 ];
 const contenitore = document.getElementsByClassName(".container");
+
+for(let i = 0; i < tutto.length; i++){
+    scheda =`
+    <div class="card">
+            <div class="card-icon">
+            <i class="fa-solid ${tutto[i].prefix}${tutto[i].name}"></i>
+            </div>
+            <div class="card-text">
+            <h3>${tutto[i].name}</h3>
+            </div>
+        </div>
+        `;
+contenitore.innerHTML += scheda; 
+console.log(scheda)
+}
